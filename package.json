@@ -1,0 +1,29 @@
+{
+  "name": "mrthebank-github-io",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "core-js": "^3.25.3",
+    "mdb-ui-kit": "^5.0.0",
+    "nuxt": "^2.15.8",
+    "tsparticles": "^2.3.4",
+    "typeit": "^8.6.6",
+    "vue": "^2.7.10",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10",
+    "vue2-particles": "^2.3.3"
+  },
+  "devDependencies": {
+    "push-dir": "^0.4.1",
+    "sass": "^1.55.0",
+    "sass-loader": "^10.3.1"
+  }
+}
