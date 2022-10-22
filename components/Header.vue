@@ -19,10 +19,13 @@
           <li class="nav-item">
             <NuxtLink class="nav-link" to="/">Home</NuxtLink>
           </li>
+          <li class="nav-item">
+            <NuxtLink class="nav-link" to="/about">About</NuxtLink>
+          </li>
         </ul>
       </div>
-      <div class="social-button-md">
-        <a href="mailto:ponlapat.itt@dome.tu.ac.th"><i class="fa-solid fa-envelope"></i></a>
+      <div class="social-button-md text-end">
+        <a href="mailto:ponlapat.itt@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         <a href="https://www.linkedin.com/in/ponlapat-ittiratchapong-842586219" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         <a href="https://github.com/MrTheBank" target="_blank"><i class="fa-brands fa-github"></i></a>
       </div>
@@ -40,6 +43,9 @@ export default {
 .nav-portfolio {
   background-color: #0d0d0d;
   min-height: 50px;
+}
+.navbar .logo {
+  width: 120px;
 }
 .navbar .logo a {
   text-transform: uppercase;
@@ -60,7 +66,7 @@ export default {
   color: rgba(255, 255, 255, 0.75);
 }
 .navbar .social-button > a > i, .navbar .social-button-md > a > i {
-  padding: 0.25rem 0;
+  padding: 0.25rem;
   font-size: 1.25rem;
 }
 .navbar a:hover:before, .navbar .active:before {
@@ -98,6 +104,7 @@ export default {
     display: none;
   }
   .navbar .social-button-md {
+    width: 120px;
     display: block;
   }
   .navbar a:hover:before, .navbar .active:before {

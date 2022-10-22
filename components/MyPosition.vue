@@ -12,13 +12,15 @@ export default {
       loop: true
     })
       .pause(1800)
-      .type('I\'m studnet')
+      .type('I am studnet')
       .delete(3, {delay: 100})
       .pause(100)
       .type('ent at ', {delay: 100})
       .type('<span class="text-thammasat"><b>Thammasat</b></span>')
       .type(' <span class="text-university"><b>University</b></span>', {delay: 100})
       .pause(1500)
+      .delete(33)
+      .type('Software Engineer')
       .go()
     ;
   }

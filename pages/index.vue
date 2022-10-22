@@ -2,17 +2,20 @@
   <div>
     <client-only>
       <Particles id="tsparticles" :particlesInit="particlesInit" :options="particle"/>
-      <div class="d-flex align-items-center justify-content-center home-full-height">
-        <div class="text-center">
-          <h1 class="home-title display-4">
-            <MyName/>
-          </h1>
-          <h2 class="home-subtitle display-6">
-            <MyPosition/>
-          </h2>
+    </client-only>
+    <div class="d-flex align-items-center justify-content-center home-full-height">
+      <div class="text-center">
+        <h1 class="home-title display-3">
+          <MyName/>
+        </h1>
+        <h2 class="home-subtitle display-6">
+          <MyPosition/>
+        </h2>
+        <div class="home-button">
+          <NuxtLink class="btn btn-outline-light btn-xlg btn-rounded" to="/about">About Me</NuxtLink>
         </div>
       </div>
-    </client-only>
+    </div>
   </div>
 </template>
 
@@ -47,6 +50,7 @@ export default {
 }
 .home-title {
   color: #ffffff;
+  font-weight: 400;
 }
 .home-subtitle {
   color: #e6e6e6;
