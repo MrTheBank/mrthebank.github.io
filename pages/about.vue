@@ -55,40 +55,10 @@
           <h1>Interests</h1>
         </div>
         <div class="row g-4" data-aos="zoom-in">
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3" v-for="i in interests" data-aos="fade-right">
             <div class="box-content">
-              <img src="/images/interests/software-engineer.png" alt="Software Engineer"/>
-              <div class="box-text">Software Engineer</div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="box-content">
-              <img src="/images/interests/coding.png" alt="Web Development"/>
-              <div class="box-text">Web Development</div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="box-content">
-              <img src="/images/interests/cyber-security.png" alt="Cyber Security"/>
-              <div class="box-text">Cyber Security</div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="box-content">
-              <img src="/images/interests/mobile-application.png" alt="Mobile Application"/>
-              <div class="box-text">Mobile Application</div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="box-content">
-              <img src="/images/interests/server.png" alt="Server"/>
-              <div class="box-text">Server</div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="box-content">
-              <img src="/images/interests/blockchain.png" alt="Blockchain"/>
-              <div class="box-text">Blockchain</div>
+              <img :src="i.icon" :alt="i.name"/>
+              <div class="box-text">{{ i.name }}</div>
             </div>
           </div>
         </div>
@@ -109,7 +79,8 @@ export default {
   },
   data() {
     return {
-      skills: []
+      skills: [],
+      interests: []
     }
   },
   mounted() {
@@ -118,11 +89,14 @@ export default {
       easing: 'ease-in-out',
     });
 
-    this.getSkills();
+    this.getAboutAPI();
   },
   methods: {
-    async getSkills() {
-      this.skills = (await this.$axios.get('https://static.maxnus.com/mrthebank-github-io/skills.json')).data;
+    async getAboutAPI() {
+      let res = (await this.$axios.get('https://mrthebank.github.io/mrthebank.github.io-api/about.json')).data;
+
+      this.skills = res.skills;
+      this.interests = res.interests;
     }
   }
 }
