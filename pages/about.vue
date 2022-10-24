@@ -106,26 +106,6 @@ export default {
 .about {
   padding: 45px 0;
 }
-.section-title {
-  text-align: center;
-  padding-bottom: 30px;
-}
-.section-title h1 {
-  text-transform: uppercase;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-  position: relative;
-}
-.section-title h1:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #4f4f4f;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
 .about .content p {
   font-size: 1.25rem;
   margin-bottom: 1rem;

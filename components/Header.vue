@@ -22,6 +22,9 @@
           <li class="nav-item">
             <NuxtLink class="nav-link" to="/about">About</NuxtLink>
           </li>
+          <li class="nav-item">
+            <NuxtLink class="nav-link" to="/portfolio">Portfolio</NuxtLink>
+          </li>
         </ul>
       </div>
       <div class="social-button-md text-end">
