@@ -55,7 +55,7 @@
           <h1>Interests</h1>
         </div>
         <div class="row g-4" data-aos="zoom-in">
-          <div class="col-md-6 col-lg-3" v-for="i in interests" data-aos="fade-right">
+          <div class="col-md-6 col-lg-4 col-xl-3" v-for="i in interests" data-aos="fade-right">
             <div class="box-content">
               <img :src="i.icon" :alt="i.name"/>
               <div class="box-text">{{ i.name }}</div>

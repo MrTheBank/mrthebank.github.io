@@ -25,6 +25,9 @@
           <li class="nav-item">
             <NuxtLink class="nav-link" to="/portfolio">Portfolio</NuxtLink>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mrthebank.github.io/mrthebank.github.io-api/Ponlapat%20Resume.pdf" target="_blank">Resume</a>
+          </li>
         </ul>
       </div>
       <div class="social-button-md text-end">
