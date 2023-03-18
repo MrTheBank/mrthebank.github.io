@@ -11,11 +11,11 @@
           </div>
           <div class="col-lg-9 content" data-aos="fade-left">
             <h3>Software Engineer & Cyber Security</h3>
-            <p>Hello! My name is Ponlapat Ittiratchapong, I'm living in Thailand. Currently I'm studying Software Engineering (Year 3) at Thammasat University. Now I'm looking to be full-stack developer and also I'm interested in Cyber Security too.</p>
+            <p>Hello! My name is Ponlapat Ittiratchapong. You can call me "Bank". I'm now living in Pathum Thani, Thailand. Currently I'm studying Software Engineering (Year 3) at Thammasat University. I also have a passion for Back-end developer and am also interested in cloud computing and cyber security.  I am a fast learner and ready to learn new things to enhance my abilities.</p>
             <div class="row">
               <div class="col-md-6">
                 <ul>
-                  <li><i class="fa-solid fa-user fa-fw"></i> <b>Age: </b> 20</li>
+                  <li><i class="fa-solid fa-user fa-fw"></i> <b>Age: </b> 21</li>
                   <li><i class="fa-solid fa-house fa-fw"></i> <b>Website: </b> <a href="https://mrthebank.github.io">mrthebank.github.io</a></li>
                   <li><i class="fa-sharp fa-solid fa-graduation-cap"></i> <b>Degree: </b> Undergraduate</li>
                   <li><i class="fa-brands fa-linkedin fa-fw"></i> <b>LinkedIn: </b> <a href="https://www.linkedin.com/in/ponlapat-ittiratchapong/">bit.ly/3CCNvmi</a></li>
